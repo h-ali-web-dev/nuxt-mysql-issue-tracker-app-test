@@ -12,13 +12,18 @@ for api testing , use the test directory by importing the collection to postman,
 
 signup page
 ![Alt text](<screenshots/signup page.png>)
+
 login page
 ![Alt text](<screenshots/login page.png>)
+
 issues list
 ![Alt text](<screenshots/issues list.png>)
+
 create issue
 ![Alt text](<screenshots/create issue.png>)
+
 update issue
 ![Alt text](<screenshots/update issue.png>)
+
 users list
 ![Alt text](<screenshots/users list.png>)
