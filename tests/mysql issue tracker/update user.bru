@@ -1,0 +1,21 @@
+meta {
+  name: update user
+  type: http
+  seq: 7
+}
+
+put {
+  url: http://localhost:3000/api/user?id=clqlmb6b80001euvdtqzcqm6l
+  body: json
+  auth: none
+}
+
+query {
+  id: clqlmb6b80001euvdtqzcqm6l
+}
+
+body:json {
+  {
+    "name": "username2 updated"
+  }
+}

@@ -1,0 +1,117 @@
+{
+  "info": {
+    "name": "mysql issue tracker",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "create issue",
+      "event": [],
+      "request": {
+        "method": "POST",
+        "header": [],
+        "url": "http://localhost:3000/api/issue",
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"description\": \"test with user\",\n  \"title\": \"title\",\n  \"status\": \"OPEN\",\n  \"assignedToUserId\":\"clqlhfryq0000euvdjtt1uean\"\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "create user",
+      "event": [],
+      "request": {
+        "method": "POST",
+        "header": [],
+        "url": "http://localhost:3000/api/user",
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"name\":\"username2\",\n  \"email\":\"test3@test.com\",\n  \"password\":\"12345678\"\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "delete issue",
+      "event": [],
+      "request": {
+        "method": "DELETE",
+        "header": [],
+        "url": "http://localhost:3000/api/issue?id=2"
+      }
+    },
+    {
+      "name": "delete user",
+      "event": [],
+      "request": {
+        "method": "DELETE",
+        "header": [],
+        "url": "http://localhost:3000/api/user?id=clqmr0rze0001dj2lculenfzo"
+      }
+    },
+    {
+      "name": "get issues",
+      "event": [],
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": "http://localhost:3000/api/issue"
+      }
+    },
+    {
+      "name": "get users",
+      "event": [],
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": "http://localhost:3000/api/user"
+      }
+    },
+    {
+      "name": "update issue",
+      "event": [],
+      "request": {
+        "method": "PUT",
+        "header": [],
+        "url": "http://localhost:3000/api/issue?id=3",
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"title\":\"title updated\"\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "update user",
+      "event": [],
+      "request": {
+        "method": "PUT",
+        "header": [],
+        "url": "http://localhost:3000/api/user?id=clqlmb6b80001euvdtqzcqm6l",
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"name\": \"username2 updated\"\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        }
+      }
+    }
+  ],
+  "variable": []
+}

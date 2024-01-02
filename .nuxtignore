@@ -1,0 +1,6 @@
+mysql-db/**
+mysql-db/*
+./mysql-db/**
+./mysql-db/*
+./**/*.dblwr
+**/*.dblwr
