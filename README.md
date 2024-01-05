@@ -4,7 +4,7 @@ A simple issue tracker inspired by https://github.com/mosh-hamedani/issue-tracke
 
 This app uses auth.js for credential authentication. For Images, MinIo is used as an object storage layer for both user and issue images. For markdown support in description, 'marked' dependency is used on client side.
 
-use 'docker-compose' file to start the MySQL and MinIo server, then start the nuxt server to create an user.
+use 'docker-compose' file to start the MySQL and MinIo server, after that set the access for the minio bucket to public, then start the nuxt server to create an user.
 
 for api testing , use the test directory by importing the collection to postman, set AUTH_BYPASS to true in '.env' file to check the apis in postman.
 
